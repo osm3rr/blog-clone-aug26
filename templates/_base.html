@@ -21,7 +21,8 @@
             <button type="submit">Cerrar sesión</button>
         </form>
     {% else %}
-        <a href="{% url 'login' %}">Iniciar sesion</a>
+        <a href="{% url 'login' %}">Iniciar sesion</a> |
+        <a href="{% url 'signup' %}">Registrarse</a>
     {% endif %}
 
     {% block content %}
